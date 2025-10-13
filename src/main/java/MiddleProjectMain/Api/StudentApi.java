@@ -41,24 +41,4 @@ public class StudentApi {
         service.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
