@@ -17,7 +17,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LectureService {
     final LectureRepos lectureRepos;
-    Lecture lecture DtoLecture dtoLecture
     public void update(DtoLecture dtoLecture, Long id){
         Lecture lecture = lectureRepos.findById(id).orElse(null);
 
