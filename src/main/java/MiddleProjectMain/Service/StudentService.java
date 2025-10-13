@@ -53,7 +53,7 @@ public class StudentService {
         student.setId(dtoStudent.getId());
         student.setName(dtoStudent.getName());
         student.setSurname(dtoStudent.getSurname());
-        student.setAge(student.getAge());
+        student.setAge(dtoStudent.getAge());
 
         return student;
     }
