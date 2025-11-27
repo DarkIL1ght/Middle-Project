@@ -2,6 +2,7 @@ package MiddleProjectMain.Service;
 
 
 import MiddleProjectMain.Dto.DtoStudent;
+import MiddleProjectMain.Service.implementation.ServiseImplStudent;
 import MiddleProjectMain.model.Student;
 import MiddleProjectMain.repository.StudentRepos;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class StudentService {
+public class StudentService implements ServiseImplStudent {
     final StudentRepos studentRepos;
 
     public void update(DtoStudent dtoStudent, Long id){

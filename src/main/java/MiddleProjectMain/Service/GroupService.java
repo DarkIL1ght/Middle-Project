@@ -3,6 +3,7 @@ package MiddleProjectMain.Service;
 
 import MiddleProjectMain.Dto.DtoGroup;
 import MiddleProjectMain.Dto.DtoStudent;
+import MiddleProjectMain.Service.implementation.GroupServiceImpl;
 import MiddleProjectMain.model.Group;
 import MiddleProjectMain.model.Student;
 import MiddleProjectMain.repository.GroupRepos;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class GroupService {
+public class GroupService implements GroupServiceImpl {
     final GroupRepos groupRepos;
 
     public void update(DtoGroup dtoGroup, Long id){

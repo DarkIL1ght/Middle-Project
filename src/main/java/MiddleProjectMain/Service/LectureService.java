@@ -3,6 +3,7 @@ package MiddleProjectMain.Service;
 
 import MiddleProjectMain.Dto.DtoGroup;
 import MiddleProjectMain.Dto.DtoLecture;
+import MiddleProjectMain.Service.implementation.LectureServiceImpl;
 import MiddleProjectMain.model.Group;
 import MiddleProjectMain.model.Lecture;
 import MiddleProjectMain.repository.GroupRepos;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class LectureService {
+public class LectureService implements LectureServiceImpl {
     final LectureRepos lectureRepos;
     public void update(DtoLecture dtoLecture, Long id){
         Lecture lecture = lectureRepos.findById(id).orElse(null);
